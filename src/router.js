@@ -3,25 +3,25 @@
 //   Simple hash-based client-side navigation
 // ============================================
 
-import { renderHome } from './pages/Home.js';
+import { renderHome }          from './pages/Home.js';
+import { renderInvestimentos } from './pages/Investimentos.js';
 // Futuras páginas serão importadas aqui:
 // import { renderDashboard }     from './pages/Dashboard.js';
 // import { renderGastos }        from './pages/Gastos.js';
 // import { renderParcelamentos } from './pages/Parcelamentos.js';
-// import { renderInvestimentos } from './pages/Investimentos.js';
 
 const routes = {
-  '/':               renderHome,
-  '/home':           renderHome,
-  // '/dashboard':      renderDashboard,
-  // '/gastos':         renderGastos,
-  // '/parcelamentos':  renderParcelamentos,
-  // '/investimentos':  renderInvestimentos,
+  '/':                renderHome,
+  '/home':            renderHome,
+  '/investimentos':   renderInvestimentos,
+  // '/dashboard':    renderDashboard,
+  // '/gastos':       renderGastos,
+  // '/parcelamentos': renderParcelamentos,
 };
 
 /**
  * Navega para uma rota sem recarregar a página.
- * @param {string} path - ex: '/dashboard'
+ * @param {string} path - ex: '/investimentos'
  */
 export function navigate(path) {
   window.history.pushState({}, '', path);

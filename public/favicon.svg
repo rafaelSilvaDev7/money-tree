@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Fundo -->
+  <rect width="32" height="32" rx="6" fill="#0c1a0e"/>
+
+  <!-- Copa da árvore - camada de baixo -->
+  <ellipse cx="16" cy="14" rx="10" ry="8" fill="#2d6e1f"/>
+
+  <!-- Copa da árvore - camada do meio -->
+  <ellipse cx="16" cy="11" rx="8" ry="6" fill="#3a8f28"/>
+
+  <!-- Copa da árvore - camada do topo -->
+  <ellipse cx="16" cy="8" rx="5" ry="4" fill="#4ca832"/>
+
+  <!-- Brilho sutil no topo -->
+  <ellipse cx="14" cy="6.5" rx="2" ry="1.5" fill="#8fcc5c" opacity="0.4"/>
+
+  <!-- Tronco -->
+  <rect x="13.5" y="20" width="5" height="7" rx="1" fill="#5a3a1a"/>
+
+  <!-- Detalhe no tronco -->
+  <rect x="14.5" y="21" width="1.5" height="5" rx="0.5" fill="#3d2510" opacity="0.5"/>
+</svg>

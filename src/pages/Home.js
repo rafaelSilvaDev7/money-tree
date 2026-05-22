@@ -41,7 +41,7 @@ const MODULES = [
     name: 'Investimentos',
     desc: 'Acompanhe sua carteira, aportes mensais e crescimento do patrimônio.',
     route: '/investimentos',
-    active: false,
+    active: true,
   },
 ];
 
