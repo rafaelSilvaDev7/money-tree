@@ -1,0 +1,121 @@
+/* ============================================
+   Money Tree — Global Styles
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap');
+
+/* ---- CSS Variables ---- */
+:root {
+  /* Colors */
+  --color-bg:           #0c1a0e;
+  --color-bg-card:      rgba(20, 40, 18, 0.6);
+  --color-bg-card-hover: rgba(25, 50, 20, 0.8);
+
+  --color-green-900:    #0c1a0e;
+  --color-green-800:    #1a3a1c;
+  --color-green-600:    #3c7823;
+  --color-green-500:    #4ca832;
+  --color-green-400:    #8fcc5c;
+  --color-green-300:    #a8d870;
+  --color-green-200:    #c4e890;
+  --color-green-100:    #d4e8c2;
+
+  --color-border:       rgba(80, 160, 50, 0.15);
+  --color-border-hover: rgba(100, 180, 60, 0.35);
+
+  --color-text-primary:   #c8e8a0;
+  --color-text-secondary: rgba(180, 220, 140, 0.6);
+  --color-text-muted:     rgba(150, 190, 110, 0.45);
+  --color-text-faint:     rgba(120, 170, 70, 0.3);
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-mono:    'DM Mono', 'Courier New', monospace;
+
+  /* Spacing */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+  --space-2xl: 60px;
+  --space-3xl: 80px;
+
+  /* Border radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* Transitions */
+  --transition: all 0.3s ease;
+}
+
+/* ---- Reset ---- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-mono);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-mono);
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---- Utility classes ---- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-faint {
+  color: var(--color-text-faint);
+}
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-hover);
+  border-radius: 2px;
+}

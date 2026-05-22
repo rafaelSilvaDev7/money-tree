@@ -1,0 +1,14 @@
+{
+  "name": "money-tree",
+  "version": "0.1.0",
+  "description": "Controle financeiro pessoal",
+  "type": "module",
+  "scripts": {
+    "dev": "npx vite",
+    "build": "npx vite build",
+    "preview": "npx vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
