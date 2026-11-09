@@ -5,6 +5,8 @@
 
 import { renderHome }          from './pages/Home.js';
 import { renderInvestimentos } from './pages/Investimentos.js';
+import { renderCartaoCredito } from './pages/CartaoCredito.js';
+import { renderCartaoCompras } from './pages/CartaoCompras.js';
 // Futuras páginas serão importadas aqui:
 // import { renderDashboard }     from './pages/Dashboard.js';
 // import { renderGastos }        from './pages/Gastos.js';
@@ -14,6 +16,8 @@ const routes = {
   '/':                renderHome,
   '/home':            renderHome,
   '/investimentos':   renderInvestimentos,
+  '/cartao':          renderCartaoCredito,
+  '/cartao/compras': renderCartaoCompras,
   // '/dashboard':    renderDashboard,
   // '/gastos':       renderGastos,
   // '/parcelamentos': renderParcelamentos,
